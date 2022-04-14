@@ -1,0 +1,38 @@
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {font-size: 60px; text-align: center;
+  border-bottom:3px solid gray;
+  margin:0;
+  padding:20px;
+}
+.saw {
+  color:gray;
+}
+#grid ol{
+  width:150px;
+  margin:0px;
+  font-size:30px; font-family:fantasy;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:0px;
+  border-right:3px solid gray;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 200px 2fr;
+}
+#grid #article{
+  padding-left:10px;
+}
+ @media(max-width:600px){
+   #grid{
+     display:block;
+   }
+  #grid ol{
+     border-bottom:3px solid gray;
+     width:100%;
+     border-right:none;
+  }
+ }
